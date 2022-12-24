@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="author" content="TOXIC #3537">
+      <meta name="description"
+            content="If you are struggling to find the best box shadow for you cards try this website out!">
+      <meta name="keywords" content="HTML, CSS, JavaScript, Box-shadow, Shadow">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+      <!-- HTML Meta Tags -->
+
+      <meta name="twitter:card" content="summary_large_image">
+      <meta property="twitter:domain" content="toxicwebs.com">
+      <meta property="twitter:url" content="https://toxicwebs.com">
+      <meta name="twitter:title" content="CSS Box-shadow Helper">
+      <meta name="twitter:description"
+            content="If you are struggling to find the best box shadow for you cards try this website out!">
+      <meta name="twitter:image" content="main.png">
+
+      <!-- Facebook Meta Tags -->
+      <meta property="og:url" content="https://toxicwebs.com">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="CSS Box-shadow Helper">
+      <meta property="og:description"
+            content="If you are struggling to find the best box shadow for you cards try this website out!">
+      <meta property="og:image" content="main.png">
+
+      <!-- Twitter Meta Tags -->
+
+      <title>CSS Box-shadow Helper</title>
+</head>
+
+<body>
+      <div class="warn">
+            If the sliders is not working try reseting the settings.
+            <a class="closewarn">X</a>
+      </div>
+      <div class="blur-phone">
+            <h1>This website will not display for devices smaller than 778px.</h1>
+      </div>
+      <div class="info">
+            <h2 class="code"></h2>
+            <button class="ctc">Copy to clipboard</button>
+      </div>
+      <div class="container">
+            <div class="ranges">
+                  <h1>Effects</h1>
+                  <h3>X Position</h3>
+                  <div class="line-container">
+                        <input type="range" class="x-pos range" value="0" min="-400" max="400" step="1">
+                        <input type="number" class="x-pos-text input-box" value="0" min="-400" max="400" step="1">
+                  </div>
+
+                  <h3>Y Position</h3>
+                  <div class="line-container">
+                        <input type="range" class="y-pos range" value="0" min="-400" max="400" step="1">
+                        <input type="number" class="y-pos-text input-box" value="0" min="-400" max="400" step="1">
+                  </div>
+
+                  <h3>Blur Range</h3>
+                  <div class="line-container">
+                        <input type="range" class="blur-range range" value="10" min="0" max="400" step="1">
+                        <input type="number" class="blur-range-text input-box" value="10" min="0" max="400" step="1">
+                  </div>
+
+
+                  <h3>Spread Range</h3>
+                  <div class="line-container">
+                        <input type="range" class="spread-range range" value="0" min="-400" max="400" step="1">
+                        <input type="number" class="spread-range-text input-box" value="0" min="-400" max="400"
+                              step="1">
+                  </div>
+
+
+                  <h3>Box round</h3>
+                  <div class="line-container">
+                        <input type="range" class="round-range range" value="0" min="0" max="100" steps="1">
+                        <input type="number" class="round-range-text input-box" value="0" min="0" max="100" steps="1">
+                  </div>
+
+
+                  <h3>Opacity</h3>
+                  <input type="number" value="1" min="0" max="1" class="opacity-range" step="0.1">
+
+                  <div class="color-con">
+                        <div class="box-box-color">
+                              <h3>Box Color</h3>
+                              <div class="colors">
+                                    <input type="color" value="#ffffff" class="box-color">
+                                    <input type="text" value="#ffffff" class="box-color-text">
+                              </div>
+                              <h3>Font Color</h3>
+                              <div class="colors">
+                                    <input type="color" value="#ffffff" class="font-color">
+                                    <input type="text" value="#ffffff" class="font-color-text">
+                              </div>
+                        </div>
+
+                        <h3>Shadow Color</h3>
+                        <div class="colors">
+
+                              <input type="number" value="0" min="0" max="255" class="shadow-color-r sc"
+                                    placeholder="R">
+                              <input type="number" value="0" min="0" max="255" class="shadow-color-g sc"
+                                    placeholder="G">
+                              <input type="number" value="0" min="0" max="255" class="shadow-color-b sc"
+                                    placeholder="B">
+                        </div>
+                  </div>
+
+
+
+                  <button class="reset">Reset</button>
+
+            </div>
+
+            <div class="box-preview">Preview</div>
+
+      </div>
+
+
+      <a href="https://discord.gg/8Wgbgkmp9c" target="_blank" class="visit" draggable="true">Join the Dev
+            Discord!</a>
+</body>
+
+</html>

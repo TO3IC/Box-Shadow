@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Outfit:wght@100;200;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      --main: #067aff;
+
+}
+
+
+.container {
+      display: flex;
+      height: 90vh;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+}
+
+.ranges {
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      gap: 15px;
+      z-index: 10;
+
+}
+
+.box-preview {
+      width: 551px;
+      height: 501px;
+
+      box-shadow: 0 0 10px 0 black;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      resize: both;
+      overflow: auto;
+      max-width: 400px;
+      max-height: 400px;
+
+}
+
+.reset {
+      padding: 7px 0;
+      font-weight: 600;
+      font-size: 20px;
+      background: var(--main);
+      color: white;
+      border: none;
+      transition: all 0.5s ease;
+}
+
+.reset:hover {
+      cursor: pointer;
+      background: var(--main);
+      transform: scale(0.98);
+}
+
+.info {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      justify-content: center;
+      gap: 10px;
+      font-size: 15px;
+      /* box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1); */
+      border-bottom: solid 2px;
+      z-index: 100;
+
+}
+
+.ctc {
+      padding: 5px 15px;
+      color: white;
+      background: var(--main);
+      font-size: 18px;
+      box-shadow: 0 4px 0 0 #003e84;
+      transition: all 0.3s ease;
+      border: none;
+
+}
+
+.ctc:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 0 #003e84;
+      /* padding: 3px 15px; */
+
+}
+
+
+
+.colors {
+      gap: 10px;
+      display: flex;
+}
+
+.ctc:hover {
+      cursor: pointer;
+      background: var(--main);
+      transition: all 0.5s ease;
+}
+
+
+.line-container {
+      display: flex;
+      width: 100%;
+      gap: 10px;
+}
+
+.range {
+      width: 550px;
+
+}
+
+.code {
+      font-size: 28px;
+}
+
+.input-box {
+      width: 40px;
+}
+
+.box-change {
+      color: var(--main);
+}
+
+.sc {
+      width: 450px;
+}
+
+
+.box-color {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: transparent;
+      border: none;
+      border-radius: 5px;
+
+}
+
+.box-color:hover {
+      cursor: pointer;
+}
+
+.font-color {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: transparent;
+      border: none;
+      border-radius: 5px;
+
+}
+
+.font-color:hover {
+      cursor: pointer;
+}
+
+.box-box-color {
+      display: flex;
+      width: 100px;
+      height: 20px;
+      font-size: 10px;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 5px;
+}
+
+.blur-phone {
+      display: none;
+}
+
+
+::selection {
+      color: white;
+      background-color: var(--main);
+}
+
+.visit {
+      -webkit-user-drag: auto;
+      position: fixed;
+      top: 0;
+      font-family: "Poppins", sans-serif;
+      left: 0;
+      text-align: left;
+      color: black;
+      text-decoration: none;
+      background: white;
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      padding: 5px 15px;
+      margin: 5px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+
+
+}
+
+.visit:hover {
+      filter: invert(0.2);
+}
+
+.closewarn {
+      background: rgba(0, 0, 0, 0.126);
+      border: none;
+      padding: 1px 7px;
+      margin: 5px;
+
+}
+
+.closewarn:hover {
+      cursor: pointer;
+}
+
+.warn {
+      display: flex;
+      height: 30px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      background: red;
+      color: white;
+}
+
+
+
+@media (max-width: 778px) {
+      .container {
+            display: block;
+      }
+
+      .blur-phone {
+            display: flex;
+            position: absolute;
+            color: white;
+            height: 100%;
+            width: 100%;
+            background: var(--main);
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+      }
+
+      .box-preview {
+            display: none;
+
+      }
+
+      .container {
+            display: none;
+      }
+
+      .info {
+            display: none;
+      }
+
+
+
+}
